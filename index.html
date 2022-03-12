@@ -2,7 +2,10 @@
 <html>
 <body>
 <h1>Hello World</h1>
-  <script>document.write(crypto.subtle.digest("SHA-512", "data"))</script>
+  <script>
+    const digest = crypto.subtle.digest("SHA-512", "data");
+    document.write(digest);
+  </script>
 <p>I'm hosted with GitHub Pages.</p>
 </body>
 </html>
